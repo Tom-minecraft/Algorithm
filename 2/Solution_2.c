@@ -44,6 +44,7 @@ Node* addTwoNumbers(Node* l1, Node* l2) {
 // 打印链表
 void printList(Node* head) {
     Node* current = head;
+    if (current == NULL) printf("NULL\n");
     while (current != NULL) {
         printf("%d", current->data);
         if (current->next != NULL) printf(" -> ");
